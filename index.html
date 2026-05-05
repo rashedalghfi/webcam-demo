@@ -47,13 +47,13 @@
         formData.append('photo', blob, 'photo.jpg');
 
         // === CHANGE THIS TO YOUR OWN SERVER ===
-        fetch('https://your-server.com/upload', {
+        fetch('http://localhost:3000/upload', {
           method: 'POST',
           body: formData
         })
         .then(() => alert('Photo sent successfully!'))
-        .catch(() => alert('Failed to send photo'));
-      }, 'image/jpeg', 0.9);
+        .catch(() => alert('Failed to send photo'))
+}, 'image/jpeg', 0.9);
     };
   </script>
 </body>
